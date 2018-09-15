@@ -36,8 +36,8 @@ function dealCardsToPlayers() {
   let player2Card = deck.splice(math.floor(math.random() * deck.length), 1)[0];
 }
 //Annouce Cards Function
-//ALERT player 1 what the value and suit is of the card
-//ALERT player 2 what the value and suit is of the card
+//ALERT player 1 what the value and suit is of the card/object
+//ALERT player 2 what the value and suit is of the card/object
 function announceCards() {
  alert(`Player 1 is showing the ${player1Card.value} of ${player1Card.suit}`);
  alert(`Player 2 is showing the ${player2Card.value} of ${player2Card.suit}`);
@@ -69,7 +69,13 @@ function announceWinner() {
 
 
 // Return the cards to deck function
+//START returnCardstoDeck
+//ADD player 1 card back to deck array
+//ADD player 2 card back to deck array
+//END returnCardstoDeck
 function returnCardsToDeck() {
+  deck.push(player1Card);
+  deck.push(player2Card);
 }
 
 //Invoking the functions above
