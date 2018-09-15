@@ -36,9 +36,11 @@ function dealCardsToPlayers() {
   let player2Card = deck.splice(math.floor(math.random() * deck.length), 1)[0];
 }
 //Annouce Cards Function
+//ALERT player 1 what the value and suit is of the card
+//ALERT player 2 what the value and suit is of the card
 function announceCards() {
- alert(`Player 1 is showing the ${this.value} of ${this.suit}`);
- alert(`Player 2 is showing the ${this.value} of ${this.suit}`);
+ alert(`Player 1 is showing the ${player1Card.value} of ${player1Card.suit}`);
+ alert(`Player 2 is showing the ${player2Card.value} of ${player2Card.suit}`);
 }
 
 // Card to Rank Function
