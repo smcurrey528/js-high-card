@@ -8,6 +8,13 @@ let player2Card = null;
 
 //Build Deck Function
 //Use a nest for loop to add cards and then suits to deck and make all cards in deck objects
+//START buildDeck function
+//CREATE constructor function to hold the deck card types
+//RUN a for loop to iterate over values
+//Nest another for loop to iterate over suits
+//SET a new object to equal a new card with value and suit
+//ADD the card into the empty deck array
+//END buildDeck
 function buildDeck() {
 function cardType (value, suit) {
   this.value = value,
@@ -22,6 +29,8 @@ function cardType (value, suit) {
 }
 
 // Deal Cards to Players Function
+//CREATE two random cards (probably use math.random for random and math.floor to make an integer)
+//SET two random cards to
 function dealCardsToPlayers() {
 
 }
