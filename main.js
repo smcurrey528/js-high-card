@@ -5,8 +5,21 @@ const deck = [];
 let player1Card = null;
 let player2Card = null;
 
+// Make all cards in deck objects
+function cardType (values, suits) {
+  this.values = values,
+  this.suits = suits
+}
+const twoClubs = new cardType (2, 'Clubs');
+const
+
+
 //Build Deck Function
-function buildDeck() {
+//Use a nest for loop to add cards
+function buildDeck(arr) {
+  for (i = 0; i < arr.length; i = 0) {
+
+  }
 }
 
 // Deal Cards to Players Function
@@ -15,6 +28,7 @@ function dealCardsToPlayers() {
 
 //Annouce Cards Function
 function announceCards() {
+
 }
 
 // Card to Rank Function
@@ -22,6 +36,9 @@ function cardToRank(card) {
 }
 // Anounce the winner function
 function announceWinner() {
+  if (player1Card[0] > playerCard2[0]) {
+    alert("Player Number One has the high card and wins!")
+  } else ('Player Number Two has the high card and wins!')
 }
 // Return the cards to deck function
 function returnCardsToDeck() {
