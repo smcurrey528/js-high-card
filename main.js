@@ -32,11 +32,9 @@ function cardType (value, suit) {
 // SET two random cards to player 1 and player2
 // END dealCardstoPlayers
 function dealCardsToPlayers() {
-  let player1Card = deck.splice(math.floor(math.random() * 52) + 1)[0,1];
-  let player2Card = deck.splice(math.floor(math.random() * 52) + 1)[0,1];
-
+  let player1Card = deck.splice(math.floor(math.random() * deck.length), 1)[0];
+  let player2Card = deck.splice(math.floor(math.random() * deck.length), 1)[0];
 }
-
 //Annouce Cards Function
 function announceCards() {
 
