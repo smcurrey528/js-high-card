@@ -13,13 +13,13 @@ const deck = [];
 //ADD the card into the empty deck array
 //END buildDeck
 function buildDeck() {
-function cardType (value, suit) {
+function CardType (value, suit) {
   this.value = value,
   this.suit = suit
 }
   for (i = 0; i < values.length; i++) {
     for (j= 0; i < suits.length; j++) {
-      let card = new cardType(values[i], suits[j]);
+      let card = new CardType (values[i], suits[j]);
       deck.push(card);
     }
   }
@@ -44,11 +44,22 @@ function announceCards() {
 }
 
 // Card to Rank Function
-//EVALUATE player 1's card and make it into an integer (parseInt)
-//EVALUATE player 2's card and make it into an integrer
+//EVALUATE to check if integer (parseInt)
+//IF value of card is a string for values then return rank. ie 'Queen' if then give rank for '12'
+//IF already a number, return card value. can use parseInt to make sure it is a number
 //possibly need to add rank into the object keys?
 function cardToRank() {
-
+  if (card.value === 'Jack') {
+    return 11;
+  } else if (card.value == 'Queen') {
+    return 12;
+  } else if (card.value === 'King') {
+    return 13;
+  } else if (card.value === 'Ace') {
+    return 14;
+  } else {
+    return parseInt(card.value);
+  }
 }
 // Anounce the winner function
 //IF player 1's card's rank is higher than P2
@@ -60,9 +71,9 @@ function cardToRank() {
 //END AnnouceWinner
 function announceWinner() {
   if (player1Card[0] > playerCard2[0]) {
-    alert("Player Number One has the high card and wins!")
+    alert("Player Number One has the high card and wins!");
   } else if (player2Card[0] > player1Card[0]) {
-    alert('Player Number Two has the high card and wins!')
+    alert('Player Number Two has the high card and wins!');
   } else  {
     alert('It\'s a tie!!');
   }
