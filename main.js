@@ -104,7 +104,7 @@ function playGame() {
 //CONFIRM if player want to play again
 //IF yes then loop back
 //ELSE then break the loop
-let replayOption = confirm("Do you want to play High Cards?")
+replayOption = confirm("Do you want to play High Cards?")
 // WHILE the player wants to keep playing is true keep playing game. Used same while loop from choose your own adventure hw
 
 let replayOption = true;
