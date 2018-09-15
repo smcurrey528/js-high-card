@@ -18,8 +18,8 @@ function cardType (value, suit) {
   this.suit = suit
 }
   for (i = 0; i < values.length; i++) {
-    for (j= 0; i < suits.length; i++) {
-      let card = new cardType(values[i], suits[i]);
+    for (j= 0; i < suits.length; j++) {
+      let card = new cardType(values[i], suits[j]);
       deck.push(card);
     }
   }
