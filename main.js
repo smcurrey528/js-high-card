@@ -1,8 +1,3 @@
-// WHILE the player wants to keep playing is true keep playing game. Used same while loop from choose your own adventure hw
-
-let replayOption = true;
-while ( replayOption = true ) {
-
 
 //Predefined variables
 const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"];
@@ -105,23 +100,23 @@ function playGame() {
   announceWinner();
   returnCardsToDeck();
 }
-buildDeck();
-playGame();
 
 //CONFIRM if player want to play again
 //IF yes then loop back
 //ELSE then break the loop
-let confirmOption = confirm("Do you want to play again?")
- if (confirmOption == true){
-   buildDeck();
-   playGame();
-  }
-  else {
-   replayOption == false;
+let replayOption = confirm("Do you want to play High Cards?")
+// WHILE the player wants to keep playing is true keep playing game. Used same while loop from choose your own adventure hw
+
+let replayOption = true;
+while ( replayOption === true ) {
+      buildDeck();
+      playGame();
+
+  if (replayOption == false);
       alert("Thanks for playing!")
    break;
   }
-}
+
 
 
 
