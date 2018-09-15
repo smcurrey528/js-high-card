@@ -14,7 +14,7 @@ function cardType (value, suit) {
   this.suit = suit
 }
   for (i = 0; i < values.length; i++) {
-    for (j=0; i < suits.length; i++) {
+    for (j= 0; i < suits.length; i++) {
       let card = new cardType(values[i], suits[i]);
       deck.push(card);
     }
@@ -23,6 +23,7 @@ function cardType (value, suit) {
 
 // Deal Cards to Players Function
 function dealCardsToPlayers() {
+
 }
 
 //Annouce Cards Function
@@ -31,14 +32,14 @@ function announceCards() {
 }
 
 // Card to Rank Function
-function cardToRank(card) {
+function cardToRank() {
 }
 // Anounce the winner function
 function announceWinner() {
-  if (player1Card[0] > playerCard2[0]) {
-    alert("Player Number One has the high card and wins!")
-  } else ('Player Number Two has the high card and wins!')
-}
+//   if (player1Card[0] > playerCard2[0]) {
+//     alert("Player Number One has the high card and wins!")
+//   } else ('Player Number Two has the high card and wins!')
+// }
 // Return the cards to deck function
 function returnCardsToDeck() {
 }
