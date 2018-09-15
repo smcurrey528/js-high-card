@@ -30,8 +30,13 @@ function cardType (value, suit) {
 
 // Deal Cards to Players Function
 //CREATE two random cards (probably use math.random for random and math.floor to make an integer)
-//SET two random cards to
+//Reminder there are 52 cards in a deck for random number
+//REMOVE random cards from deck
+// SET two random cards to player 1 and player2
+// END dealCardstoPlayers
 function dealCardsToPlayers() {
+  let player1Card = math.floor(math.random() * 52) + 1
+  let player2Card = math.floor(math.random() * 52) + 1
 
 }
 
