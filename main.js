@@ -1,3 +1,9 @@
+// WHILE the player wants to keep playing is true keep playing game. Used same while loop from choose your own adventure hw
+
+let playAgain = true
+while ( playAgain == true ) {
+
+
 //Predefined variables
 const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"];
 const suits = ["Clubs", "Diamonds", "Hearts", "Spades"];
@@ -70,9 +76,9 @@ function cardToRank() {
 //END IFELSE
 //END AnnouceWinner
 function announceWinner() {
-  if (player1Card[0] > playerCard2[0]) {
+  if (cardToRank(player1Card) > cardToRank(player2Card)) {
     alert("Player Number One has the high card and wins!");
-  } else if (player2Card[0] > player1Card[0]) {
+  } else if (cardToRank(player2Card) > cardToRank(player1Card)) {
     alert('Player Number Two has the high card and wins!');
   } else  {
     alert('It\'s a tie!!');
@@ -97,9 +103,20 @@ function playGame() {
   announceWinner();
   returnCardsToDeck();
 }
-
 buildDeck();
 playGame();
 
-//Keep playing with the while loop
+//CONFIRM if player want to play again
+//IF yes then loop back
+//ELSE then break the loop
+let playAgain = confirm('Do you want to play again?');
+  if (!playAgain) {
+    break;
+  }
+
+}
+
+
+
+
 //Keep score of which player has the highest score. Use alert to show the highest score
