@@ -1,7 +1,7 @@
 // WHILE the player wants to keep playing is true keep playing game. Used same while loop from choose your own adventure hw
 
-let playAgain = true
-while ( playAgain == true ) {
+let replayOption = true
+while ( replayOption == true ) {
 
 
 //Predefined variables
@@ -109,11 +109,15 @@ playGame();
 //CONFIRM if player want to play again
 //IF yes then loop back
 //ELSE then break the loop
-let playAgain = confirm('Do you want to play again?');
-  if (!playAgain) {
-    break;
+let confirmOption = confirm("Do you want to play again?")
+ if (confirmOption == true){
+   replayOption == true;
   }
-
+  else {
+   replayOption == false;
+      alert("Thanks for playing!")
+   break;
+  }
 }
 
 
