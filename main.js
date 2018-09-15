@@ -32,8 +32,8 @@ function cardType (value, suit) {
 // SET two random cards to player 1 and player2
 // END dealCardstoPlayers
 function dealCardsToPlayers() {
-  let player1Card = deck.splice(math.floor(math.random() * deck.length), 1)[0];
-  let player2Card = deck.splice(math.floor(math.random() * deck.length), 1)[0];
+  let player1Card = deck.splice(Math.floor(Math.random() * deck.length), 1)[0];
+  let player2Card = deck.splice(Math.floor(Math.random() * deck.length), 1)[0];
 }
 //Annouce Cards Function
 //ALERT player 1 what the value and suit is of the card/object
@@ -48,6 +48,7 @@ function announceCards() {
 //EVALUATE player 2's card and make it into an integrer
 //possibly need to add rank into the object keys?
 function cardToRank() {
+
 }
 // Anounce the winner function
 //IF player 1's card's rank is higher than P2
