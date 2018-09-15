@@ -1,7 +1,7 @@
 // WHILE the player wants to keep playing is true keep playing game. Used same while loop from choose your own adventure hw
 
-let replayOption = true
-while ( replayOption == true ) {
+let replayOption = true;
+while ( replayOption = true ) {
 
 
 //Predefined variables
@@ -34,7 +34,7 @@ function CardType (value, suit) {
 // Deal Cards to Players Function
 //CREATE two random cards (probably use math.random for random and math.floor to make an integer)
 //Reminder there are 52 cards in a deck for random number
-//REMOVE random cards from deck. Reminder to set index and how many from deck
+//REMOVE random cards from deck. Reminder to set index and how many from deck in splice function. use [0] so it doesn't return in an array
 // SET two random cards to player 1 and player2
 // END dealCardstoPlayers
 function dealCardsToPlayers() {
@@ -67,6 +67,7 @@ function cardToRank() {
     return parseInt(card.value);
   }
 }
+
 // Anounce the winner function
 //IF player 1's card's rank is higher than P2
 //THEN say 'Player 1 wins'
@@ -75,6 +76,7 @@ function cardToRank() {
 //ELSE say 'its a tie'
 //END IFELSE
 //END AnnouceWinner
+
 function announceWinner() {
   if (cardToRank(player1Card) > cardToRank(player2Card)) {
     alert("Player Number One has the high card and wins!");
@@ -111,7 +113,8 @@ playGame();
 //ELSE then break the loop
 let confirmOption = confirm("Do you want to play again?")
  if (confirmOption == true){
-   replayOption == true;
+   buildDeck();
+   playGame();
   }
   else {
    replayOption == false;
