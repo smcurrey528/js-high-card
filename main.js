@@ -2,9 +2,6 @@
 const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"];
 const suits = ["Clubs", "Diamonds", "Hearts", "Spades"];
 const deck = [];
-let player1Card = null;
-let player2Card = null;
-
 
 //Build Deck Function
 //Use a nest for loop to add cards and then suits to deck and make all cards in deck objects
@@ -31,12 +28,12 @@ function cardType (value, suit) {
 // Deal Cards to Players Function
 //CREATE two random cards (probably use math.random for random and math.floor to make an integer)
 //Reminder there are 52 cards in a deck for random number
-//REMOVE random cards from deck
+//REMOVE random cards from deck. Reminder to set index and how many from deck
 // SET two random cards to player 1 and player2
 // END dealCardstoPlayers
 function dealCardsToPlayers() {
-  let player1Card = deck.splice(math.floor(math.random() * 52) + 1)
-  let player2Card = deck.splice(math.floor(math.random() * 52) + 1)
+  let player1Card = deck.splice(math.floor(math.random() * 52) + 1)[0,1];
+  let player2Card = deck.splice(math.floor(math.random() * 52) + 1)[0,1];
 
 }
 
