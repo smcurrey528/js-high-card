@@ -37,7 +37,8 @@ function dealCardsToPlayers() {
 }
 //Annouce Cards Function
 function announceCards() {
-
+ alert(`Player 1 is showing the ${this.value} of ${this.suit}`);
+ alert(`Player 2 is showing the ${this.value} of ${this.suit}`);
 }
 
 // Card to Rank Function
