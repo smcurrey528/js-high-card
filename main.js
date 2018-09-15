@@ -5,20 +5,19 @@ const deck = [];
 let player1Card = null;
 let player2Card = null;
 
-// Make all cards in deck objects
-function cardType (values, suits) {
-  this.values = values,
-  this.suits = suits
-}
-const twoClubs = new cardType (2, 'Clubs');
-const
-
 
 //Build Deck Function
-//Use a nest for loop to add cards
-function buildDeck(arr) {
-  for (i = 0; i < arr.length; i = 0) {
-
+//Use a nest for loop to add cards and then suits to deck and make all cards in deck objects
+function buildDeck() {
+function cardType (value, suit) {
+  this.value = value,
+  this.suit = suit
+}
+  for (i = 0; i < values.length; i++) {
+    for (j=0; i < suits.length; i++) {
+      let card = new cardType(values[i], suits[i]);
+      deck.push(card);
+    }
   }
 }
 
