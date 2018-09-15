@@ -44,14 +44,30 @@ function announceCards() {
 }
 
 // Card to Rank Function
+//EVALUATE player 1's card and make it into an integer (parseInt)
+//EVALUATE player 2's card and make it into an integrer
+//possibly need to add rank into the object keys?
 function cardToRank() {
 }
 // Anounce the winner function
+//IF player 1's card's rank is higher than P2
+//THEN say 'Player 1 wins'
+//ELSE IF player two has the higher rank
+//THEN say 'Player 2 wins'
+//ELSE say 'its a tie'
+//END IFELSE
+//END AnnouceWinner
 function announceWinner() {
-//   if (player1Card[0] > playerCard2[0]) {
-//     alert("Player Number One has the high card and wins!")
-//   } else ('Player Number Two has the high card and wins!')
-// }
+  if (player1Card[0] > playerCard2[0]) {
+    alert("Player Number One has the high card and wins!")
+  } else if (player2Card[0] > player1Card[0]) {
+    alert('Player Number Two has the high card and wins!')
+  } else  {
+    alert('It\'s a tie!!');
+  }
+}
+
+
 // Return the cards to deck function
 function returnCardsToDeck() {
 }
